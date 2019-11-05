@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 using WebMultiLanguage.Models;
 using WebMultiLanguage.Content.Texts;
+using System.Net.Http;
+using System.Web.Script.Serialization;
 
 namespace WebMultiLanguage.Controllers
 {
@@ -18,8 +20,40 @@ namespace WebMultiLanguage.Controllers
 
         public ActionResult About()
         {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://localhost:54535/api/Proveedor/");
+                //HTTP GET
+                var responseTask = client.GetAsync("getlist");
+                responseTask.Wait();
+
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsStringAsync();
+                JavaScriptSerializer JSserializer = new JavaScriptSerializer();
+
+                var proveedor = JSserializer.Deserialize<List<Proveedor>>(readTask.Result);
+                var list = proveedor;
+                //    readTask.Wait();
+                //    var proveedores = readTask.Result;
+                }
+                //else //web api sent error response 
+                //{
+                //    //log response status here..
+
+                //    students = Enumerable.Empty<StudentViewModel>();
+
+                //    ModelState.AddModelError(string.Empty, "Server error. Please contact administrator.");
+                //}
+            }
+
+
+
             ViewBag.Title = RHome.About;
             ViewBag.Message = RHome.AboutMessage;
+
             return View();
         }
 
