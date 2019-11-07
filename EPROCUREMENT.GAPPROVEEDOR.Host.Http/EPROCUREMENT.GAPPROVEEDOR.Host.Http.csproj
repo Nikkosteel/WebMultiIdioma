@@ -85,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ProveedorController.cs" />
+    <Compile Include="Controllers\CatalogoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -105,6 +105,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EPROCUREMENT.GAPPROVEEDOR.Business\EPROCUREMENT.GAPPROVEEDOR.Business.csproj">
+      <Project>{272d2e9a-2b1c-4a19-ae2e-1e0a9d74b8d5}</Project>
+      <Name>EPROCUREMENT.GAPPROVEEDOR.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EPROCUREMENT.GAPPROVEEDOR.Entities\EPROCUREMENT.GAPPROVEEDOR.Entities.csproj">
       <Project>{82b84451-2b68-477a-8175-aea7244947de}</Project>
       <Name>EPROCUREMENT.GAPPROVEEDOR.Entities</Name>

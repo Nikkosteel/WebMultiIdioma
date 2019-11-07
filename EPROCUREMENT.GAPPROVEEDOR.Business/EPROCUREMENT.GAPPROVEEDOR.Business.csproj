@@ -42,8 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Catalogo\HandlerCatalogo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EPROCUREMENT.GAPPROVEEDOR.Data\EPROCUREMENT.GAPPROVEEDOR.Data.csproj">
+      <Project>{655bcacf-506f-422c-9ba3-1f013be807ce}</Project>
+      <Name>EPROCUREMENT.GAPPROVEEDOR.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPROCUREMENT.GAPPROVEEDOR.Entities\EPROCUREMENT.GAPPROVEEDOR.Entities.csproj">
+      <Project>{82b84451-2b68-477a-8175-aea7244947de}</Project>
+      <Name>EPROCUREMENT.GAPPROVEEDOR.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

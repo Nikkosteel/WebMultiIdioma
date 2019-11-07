@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EPROCUREMENT.GAPPROVEEDOR.Entities
 {
-    public class Proveedor
+    public class PaisDTO
     {
-        public String Nombre { get; set; }
-        public String Giro { get; set; }
+        public int IdPais { get; set; }
+        public string Nombre { get; set; }
     }
 }

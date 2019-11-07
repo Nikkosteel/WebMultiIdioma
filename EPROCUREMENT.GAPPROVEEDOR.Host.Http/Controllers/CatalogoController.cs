@@ -1,4 +1,5 @@
-﻿using EPROCUREMENT.GAPPROVEEDOR.Entities;
+﻿using EPROCUREMENT.GAPPROVEEDOR.Business.Catalogo;
+using EPROCUREMENT.GAPPROVEEDOR.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,22 +9,18 @@ using System.Web.Http;
 
 namespace EPROCUREMENT.GAPPROVEEDOR.Host.Http.Controllers
 {
-    [RoutePrefix("api/Proveedor")]
-    public class ProveedorController : ApiController
+    [RoutePrefix("api/Catalogo")]
+    public class CatalogoController : ApiController
     {
         // GET: api/Proveedor
         [HttpGet]
-        [Route("GetList")]
-        public List<Proveedor> Get()
+        [Route("PaisGetList")]
+        public PaisResponseDTO Get()
         {
-            Proveedor proveedor = new Proveedor
-            {
-                Nombre = "Mauricio",
-                Giro = "Desarrollo"
-            };
-            List<Proveedor> proveedorList = new List<Proveedor>();
-            proveedorList.Add(proveedor);
-             return proveedorList;
+            HandlerCatalogo handlerCatalogo = new HandlerCatalogo();
+            var paisResponseDTO = new PaisResponseDTO();
+            paisResponseDTO = handlerCatalogo.GetPaisList();
+            return paisResponseDTO;
         }
 
         // GET: api/Proveedor/5
