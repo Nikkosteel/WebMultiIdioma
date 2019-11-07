@@ -1,11 +1,7 @@
 ﻿using EPROCUREMENT.GAPPROVEEDOR.Data;
 using EPROCUREMENT.GAPPROVEEDOR.Entities;
 using EPROCUREMENT.GAPPROVEEDOR.Entities.Comun;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EPROCUREMENT.GAPPROVEEDOR.Business.Catalogo
 {

@@ -38,7 +38,7 @@ namespace EPROCUREMENT.GAPPROVEEDOR.Data
                 using (var conexion = new SqlConnection(Helper.Connection()))
                 {
                     conexion.Open();
-                    var cmd = new SqlCommand("", conexion)
+                    var cmd = new SqlCommand("[dbo].[usp_EPROCUREMENT_Pais_GETL]", conexion)
                     {
                         CommandType = CommandType.StoredProcedure
                     };
