@@ -88,6 +88,51 @@ namespace WebMultiLanguage.Content.Texts {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a address.
+        /// </summary>
+        public static string Address {
+            get {
+                return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Business name.
+        /// </summary>
+        public static string BName {
+            get {
+                return ResourceManager.GetString("BName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Category.
+        /// </summary>
+        public static string Category {
+            get {
+                return ResourceManager.GetString("Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cell Phone.
+        /// </summary>
+        public static string CellPhone {
+            get {
+                return ResourceManager.GetString("CellPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ContactName.
+        /// </summary>
+        public static string CName {
+            get {
+                return ResourceManager.GetString("CName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Contact.
         /// </summary>
         public static string Contact {
@@ -151,6 +196,60 @@ namespace WebMultiLanguage.Content.Texts {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Country.
+        /// </summary>
+        public static string Country {
+            get {
+                return ResourceManager.GetString("Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Phone Contact.
+        /// </summary>
+        public static string CPhone {
+            get {
+                return ResourceManager.GetString("CPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Email.
+        /// </summary>
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Fax.
+        /// </summary>
+        public static string Fax {
+            get {
+                return ResourceManager.GetString("Fax", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Fill the characters.
+        /// </summary>
+        public static string FillC {
+            get {
+                return ResourceManager.GetString("FillC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Languaje.
+        /// </summary>
+        public static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Marketing.
         /// </summary>
         public static string Marketing {
@@ -165,6 +264,69 @@ namespace WebMultiLanguage.Content.Texts {
         public static string Message {
             get {
                 return ResourceManager.GetString("Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nacionality.
+        /// </summary>
+        public static string Nacionality {
+            get {
+                return ResourceManager.GetString("Nacionality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Name of Company.
+        /// </summary>
+        public static string NameOfCompany {
+            get {
+                return ResourceManager.GetString("NameOfCompany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a NIF.
+        /// </summary>
+        public static string NIF {
+            get {
+                return ResourceManager.GetString("NIF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Phone.
+        /// </summary>
+        public static string Phone {
+            get {
+                return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Position.
+        /// </summary>
+        public static string Position {
+            get {
+                return ResourceManager.GetString("Position", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a PROVIDERS PORTAL.
+        /// </summary>
+        public static string ProvP {
+            get {
+                return ResourceManager.GetString("ProvP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a RFC.
+        /// </summary>
+        public static string RFC {
+            get {
+                return ResourceManager.GetString("RFC", resourceCulture);
             }
         }
         
@@ -187,11 +349,47 @@ namespace WebMultiLanguage.Content.Texts {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a MULTI-LANGUAGE MVC APPLICATION.
+        ///   Busca una cadena traducida similar a EProcurement.
         /// </summary>
         public static string Title {
             get {
                 return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Provider Registration.
+        /// </summary>
+        public static string TitlePP {
+            get {
+                return ResourceManager.GetString("TitlePP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Time Zone.
+        /// </summary>
+        public static string TZone {
+            get {
+                return ResourceManager.GetString("TZone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a WebPage.
+        /// </summary>
+        public static string WPage {
+            get {
+                return ResourceManager.GetString("WPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Zip Code.
+        /// </summary>
+        public static string ZipCode {
+            get {
+                return ResourceManager.GetString("ZipCode", resourceCulture);
             }
         }
     }

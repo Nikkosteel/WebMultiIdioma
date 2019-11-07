@@ -126,6 +126,21 @@
   <data name="AboutMessage" xml:space="preserve">
     <value>Your company or personal information</value>
   </data>
+  <data name="Address" xml:space="preserve">
+    <value>address</value>
+  </data>
+  <data name="BName" xml:space="preserve">
+    <value>Business name</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CellPhone" xml:space="preserve">
+    <value>Cell Phone</value>
+  </data>
+  <data name="CName" xml:space="preserve">
+    <value>ContactName</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
@@ -147,11 +162,50 @@
   <data name="Content" xml:space="preserve">
     <value>ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and gives you full control over markup for enjoyable, agile development.</value>
   </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CPhone" xml:space="preserve">
+    <value>Phone Contact</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="FillC" xml:space="preserve">
+    <value>Fill the characters</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Languaje</value>
+  </data>
   <data name="Marketing" xml:space="preserve">
     <value>Marketing</value>
   </data>
   <data name="Message" xml:space="preserve">
     <value>Contact Message</value>
+  </data>
+  <data name="Nacionality" xml:space="preserve">
+    <value>Nacionality</value>
+  </data>
+  <data name="NameOfCompany" xml:space="preserve">
+    <value>Name of Company</value>
+  </data>
+  <data name="NIF" xml:space="preserve">
+    <value>NIF</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="ProvP" xml:space="preserve">
+    <value>PROVIDERS PORTAL</value>
+  </data>
+  <data name="RFC" xml:space="preserve">
+    <value>RFC</value>
   </data>
   <data name="Subtitle" xml:space="preserve">
     <value>ASP.NET is a free web framework for building great Multi-Language MVC Web sites and Web applications using HTML, CSS and JavaScript.</value>
@@ -160,6 +214,18 @@
     <value>Support</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>MULTI-LANGUAGE MVC APPLICATION</value>
+    <value>EProcurement</value>
+  </data>
+  <data name="TitlePP" xml:space="preserve">
+    <value>Provider Registration</value>
+  </data>
+  <data name="TZone" xml:space="preserve">
+    <value>Time Zone</value>
+  </data>
+  <data name="WPage" xml:space="preserve">
+    <value>WebPage</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
   </data>
 </root>

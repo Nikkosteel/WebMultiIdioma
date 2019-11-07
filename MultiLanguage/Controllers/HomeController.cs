@@ -8,6 +8,7 @@ using WebMultiLanguage.Models;
 using WebMultiLanguage.Content.Texts;
 using System.Net.Http;
 using System.Web.Script.Serialization;
+using WebMultiLanguage.Business;
 
 namespace WebMultiLanguage.Controllers
 {
@@ -16,6 +17,15 @@ namespace WebMultiLanguage.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+        /// <summary>
+        /// Consumir API Método Traer Paises
+        /// </summary>
+        /// <returns></returns>
+        public JsonResult GetPaises() 
+        {
+            var bslogic = new BusinessLogic();
+            return Json(bslogic.getPaises(), JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult About()

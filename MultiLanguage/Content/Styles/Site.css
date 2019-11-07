@@ -43,3 +43,18 @@ textarea {
 .blue {
     color:blue;
 }
+/**Panels**/
+.clickable {
+    cursor: pointer;
+}
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
+.row {
+    padding-bottom: 25px;
+}
+.t-a-c{
+    text-align:center;
+}

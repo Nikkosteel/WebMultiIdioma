@@ -111,6 +111,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Business\BusinessLogic.cs" />
     <Compile Include="Content\Texts\RError.fr-fr1.Designer.cs">
       <DependentUpon>RError.fr-fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -158,16 +159,22 @@
     </Compile>
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Entities\Comun\ErrorDTO.cs" />
+    <Compile Include="Entities\PaisDTO.cs" />
+    <Compile Include="Entities\Response\PaisResponseDTO.cs" />
+    <Compile Include="Entities\Response\ResponseBaseDTO.cs" />
     <Compile Include="Extensions\UrlHelperExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\GlobalHelper.cs" />
     <Compile Include="Models\ContactModel.cs" />
+    <Compile Include="Models\PaisModel.cs" />
     <Compile Include="Models\Proveedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Images\fr-fr\eiffel.jpg" />
     <Content Include="Content\Images\fr-fr\welcome.jpg" />
     <Content Include="Content\Images\France.png" />
@@ -187,6 +194,9 @@
     <Content Include="Content\Scripts\bootstrap.js" />
     <Content Include="Content\Scripts\bootstrap.min.js" />
     <Content Include="angular.json" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Content\Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Content\Scripts\jquery-1.10.2.js" />
     <Content Include="Content\Scripts\jquery-1.10.2.min.js" />
