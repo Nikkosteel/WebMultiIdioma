@@ -12,7 +12,5 @@ namespace EPROCUREMENT.GAPPROVEEDOR.Data
         {
             return ConfigurationManager.ConnectionStrings["GAPProveedoresConnectionString"].ToString();
         }
-
-
     }
 }

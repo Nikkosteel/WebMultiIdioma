@@ -7,10 +7,10 @@ namespace EPROCUREMENT.GAPPROVEEDOR.Host.Http.Controllers
     [RoutePrefix("api/Catalogo")]
     public class CatalogoController : ApiController
     {
-        // GET: api/Proveedor
+        // GET: api/Pais
         [HttpGet]
         [Route("PaisGetList")]
-        public PaisResponseDTO Get()
+        public PaisResponseDTO GetPaisList()
         {
             HandlerCatalogo handlerCatalogo = new HandlerCatalogo();
             var paisResponseDTO = new PaisResponseDTO();
@@ -19,25 +19,52 @@ namespace EPROCUREMENT.GAPPROVEEDOR.Host.Http.Controllers
             return paisResponseDTO;
         }
 
-        // GET: api/Proveedor/5
-        public string Get(int id)
+        // GET: api/Aeropuerto
+        [HttpGet]
+        [Route("AeropuertoGetList")]
+        public AeropuertoResponseDTO GetAeropuertoList()
         {
-            return "value";
+            HandlerCatalogo handlerCatalogo = new HandlerCatalogo();
+            var aeropuertoResponseDTO = new AeropuertoResponseDTO();
+            aeropuertoResponseDTO = handlerCatalogo.GetAeropuertoList();
+
+            return aeropuertoResponseDTO;
         }
 
-        // POST: api/Proveedor
-        public void Post([FromBody]string value)
+        // GET: api/Giro
+        [HttpGet]
+        [Route("GiroGetList")]
+        public GiroResponseDTO GetGiroList()
         {
+            HandlerCatalogo handlerCatalogo = new HandlerCatalogo();
+            var giroResponseDTO = new GiroResponseDTO();
+            giroResponseDTO = handlerCatalogo.GetGiroList();
+
+            return giroResponseDTO;
         }
 
-        // PUT: api/Proveedor/5
-        public void Put(int id, [FromBody]string value)
+        // GET: api/Nacionalidad
+        [HttpGet]
+        [Route("NacionalidadGetList")]
+        public NacionalidadResponseDTO GetNacionalidadList()
         {
+            HandlerCatalogo handlerCatalogo = new HandlerCatalogo();
+            var nacionalidadResponseDTO = new NacionalidadResponseDTO();
+            nacionalidadResponseDTO = handlerCatalogo.GetNacionalidadList();
+
+            return nacionalidadResponseDTO;
         }
 
-        // DELETE: api/Proveedor/5
-        public void Delete(int id)
+        // GET: api/ZonaHoraria
+        [HttpGet]
+        [Route("ZonaHorariaGetList")]
+        public NacionalidadResponseDTO GetZonaHorariaList()
         {
+            HandlerCatalogo handlerCatalogo = new HandlerCatalogo();
+            var nacionalidadResponseDTO = new NacionalidadResponseDTO();
+            nacionalidadResponseDTO = handlerCatalogo.GetNacionalidadList();
+
+            return nacionalidadResponseDTO;
         }
     }
 }

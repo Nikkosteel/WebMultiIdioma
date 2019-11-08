@@ -1,4 +1,4 @@
-﻿namespace EPROCUREMENT.GAPPROVEEDOR.Entities.Catalogo
+﻿namespace EPROCUREMENT.GAPPROVEEDOR.Entities
 {
     public class NacionalidadDTO
     {
